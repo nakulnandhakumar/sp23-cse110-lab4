@@ -36,4 +36,9 @@ should be 150 so that's what it will print
 **B.** *FALSE*, for the same reason as above 2<12 <br>
 **C.** *TRUE*, for the same reason above 2=2 <br>
 **D.** *FALSE*, `===` is a strict equality check which means that both the type and the value must be the same. Since the types are different, this is false <br>
-**E.** *
+**E.** *FALSE*, true is converted to `1` which is not equal to 2 <br>
+**F.** *TRUE*, because even though a strict equality check is used the type of `Boolean(2)` is a boolean, same as `true`, and `Boolean(2) = true` <br><br>
+
+15. The difference between `==` and `===` is that the former converts all the operands involved into numbers (except for some very special cases involving `null` and `undefined`) before then carrying out the comparison. The latter does not do type conversion before carrying out the comparison. This means that if you use `===` to compare values of different types, the result will always be false. However, if you use `==` to compare values of different types, it is not necessarily false.
+16. In separate JS file
+17. 
