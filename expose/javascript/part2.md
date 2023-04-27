@@ -41,4 +41,6 @@ should be 150 so that's what it will print
 
 15. The difference between `==` and `===` is that the former converts all the operands involved into numbers (except for some very special cases involving `null` and `undefined`) before then carrying out the comparison. The latter does not do type conversion before carrying out the comparison. This means that if you use `===` to compare values of different types, the result will always be false. However, if you use `==` to compare values of different types, it is not necessarily false.
 16. In separate JS file
-17. 
+17. The function will return an array of `[2,4,6]`. First the array `[1,2,3]` is passed in to `modifyArray`. There is a for loop that iterates over all the elements in `[1,2,3]` and calls the function `doSomething` on each element and then pushing the modified element to `newArr`. Then `newArr` becomes `[2,4,6]` at the end and is returned.
+18. In separate JS file
+19. 1 4 3 2 is printed because the 2 is set to be printed 1000 ms after it is called, the 3 is set to be printed 0 ms after its cxalled which is still slower than the 1 and the 4.
